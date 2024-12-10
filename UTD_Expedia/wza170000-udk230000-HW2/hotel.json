@@ -1,0 +1,184 @@
+{
+    "hotels": [
+        {
+            "hotel-id": "H001",
+            "hotel-name": "Driskill",
+            "city": "Austin",
+            "available-rooms": 20,
+            "check-in-date": "2024-09-05",
+            "check-out-date": "2024-09-10",
+            "price-per-night": 280
+        },
+        {
+            "hotel-id": "H002",
+            "hotel-name": "Hyatt Regency",
+            "city": "Dallas",
+            "available-rooms": 18,
+            "check-in-date": "2024-09-10",
+            "check-out-date": "2024-09-15",
+            "price-per-night": 220
+        },
+        {
+            "hotel-id": "H003",
+            "hotel-name": "Hilton Americas",
+            "city": "Houston",
+            "available-rooms": 18,
+            "check-in-date": "2024-09-15",
+            "check-out-date": "2024-09-20",
+            "price-per-night": 240
+        },
+        {
+            "hotel-id": "H004",
+            "hotel-name": "Hotel Contessa",
+            "city": "San Antonio",
+            "available-rooms": 25,
+            "check-in-date": "2024-09-20",
+            "check-out-date": "2024-09-25",
+            "price-per-night": 210
+        },
+        {
+            "hotel-id": "H005",
+            "hotel-name": "The Ritz-Carlton",
+            "city": "Dallas",
+            "available-rooms": 10,
+            "check-in-date": "2024-09-25",
+            "check-out-date": "2024-09-30",
+            "price-per-night": 350
+        },
+        {
+            "hotel-id": "H006",
+            "hotel-name": "Palace Hotel",
+            "city": "San Francisco",
+            "available-rooms": 8,
+            "check-in-date": "2024-10-01",
+            "check-out-date": "2024-10-06",
+            "price-per-night": 410
+        },
+        {
+            "hotel-id": "H007",
+            "hotel-name": "The Peninsula",
+            "city": "Los Angeles",
+            "available-rooms": 12,
+            "check-in-date": "2024-10-06",
+            "check-out-date": "2024-10-11",
+            "price-per-night": 460
+        },
+        {
+            "hotel-id": "H008",
+            "hotel-name": "Fairmont Grand Del Mar",
+            "city": "San Diego",
+            "available-rooms": 14,
+            "check-in-date": "2024-10-11",
+            "check-out-date": "2024-10-16",
+            "price-per-night": 420
+        },
+        {
+            "hotel-id": "H009",
+            "hotel-name": "The Beverly Hills Hotel",
+            "city": "Los Angeles",
+            "available-rooms": 16,
+            "check-in-date": "2024-10-16",
+            "check-out-date": "2024-10-21",
+            "price-per-night": 450
+        },
+        {
+            "hotel-id": "H010",
+            "hotel-name": "L'Auberge Del Mar",
+            "city": "San Diego",
+            "available-rooms": 10,
+            "check-in-date": "2024-10-21",
+            "check-out-date": "2024-10-26",
+            "price-per-night": 330
+        },
+        {
+            "hotel-id": "H011",
+            "hotel-name": "Hotel Valencia",
+            "city": "San Jose",
+            "available-rooms": 20,
+            "check-in-date": "2024-10-26",
+            "check-out-date": "2024-10-31",
+            "price-per-night": 280
+        },
+        {
+            "hotel-id": "H012",
+            "hotel-name": "JW Marriott",
+            "city": "San Francisco",
+            "available-rooms": 15,
+            "check-in-date": "2024-11-01",
+            "check-out-date": "2024-11-06",
+            "price-per-night": 400
+        },
+        {
+            "hotel-id": "H013",
+            "hotel-name": "W Austin",
+            "city": "Austin",
+            "available-rooms": 30,
+            "check-in-date": "2024-11-06",
+            "check-out-date": "2024-11-11",
+            "price-per-night": 260
+        },
+        {
+            "hotel-id": "H014",
+            "hotel-name": "Omni Hotel",
+            "city": "San Antonio",
+            "available-rooms": 22,
+            "check-in-date": "2024-11-11",
+            "check-out-date": "2024-11-16",
+            "price-per-night": 200
+        },
+        {
+            "hotel-id": "H015",
+            "hotel-name": "Hotel Galvez",
+            "city": "San Diego",
+            "available-rooms": 18,
+            "check-in-date": "2024-11-16",
+            "check-out-date": "2024-11-21",
+            "price-per-night": 180
+        },
+        {
+            "hotel-id": "H016",
+            "hotel-name": "The Tremont House",
+            "city": "San Jose",
+            "available-rooms": 16,
+            "check-in-date": "2024-11-21",
+            "check-out-date": "2024-11-26",
+            "price-per-night": 190
+        },
+        {
+            "hotel-id": "H017",
+            "hotel-name": "The Westin",
+            "city": "Los Angeles",
+            "available-rooms": 14,
+            "check-in-date": "2024-11-26",
+            "check-out-date": "2024-12-01",
+            "price-per-night": 350
+        },
+        {
+            "hotel-id": "H018",
+            "hotel-name": "The Langham",
+            "city": "Pasadena",
+            "available-rooms": 20,
+            "check-in-date": "2024-09-03",
+            "check-out-date": "2024-09-08",
+            "price-per-night": 370
+        },
+        {
+            "hotel-id": "H019",
+            "hotel-name": "Manchester Grand Hyatt",
+            "city": "San Diego",
+            "available-rooms": 12,
+            "check-in-date": "2024-09-08",
+            "check-out-date": "2024-09-13",
+            "price-per-night": 390
+        },
+        {
+            "hotel-id": "H020",
+            "hotel-name": "Four Seasons Hotel",
+            "city": "Houston",
+            "available-rooms": 9,
+            "check-in-date": "2024-09-13",
+            "check-out-date": "2024-09-18",
+            "price-per-night": 300
+        }
+    ]
+}

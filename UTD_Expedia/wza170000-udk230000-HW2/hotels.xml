@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<bookings>
+	<stay>
+		<hotelId>
+			H002
+		</hotelId>
+		<hotelName>
+			Hyatt Regency
+		</hotelName>
+		<city>
+			Dallas
+		</city>
+		<checkInDate>
+			2024-09-10
+		</checkInDate>
+		<checkOutDate>
+			2024-09-15
+		</checkOutDate>
+		<adults>
+			1
+		</adults>
+		<children>
+			0
+		</children>
+		<infants>
+			0
+		</infants>
+		<pricePerNight>
+			220
+		</pricePerNight>
+		<totalPrice>
+			1100
+		</totalPrice>
+		<availableRooms>
+			13
+		</availableRooms>
+	</stay>
+</bookings>

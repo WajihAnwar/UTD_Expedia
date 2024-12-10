@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<contacts>
+	<contact>
+		<contact-id>
+			674f9fd93578d
+		</contact-id>
+		<firstname>
+			Wajih
+		</firstname>
+		<lastname>
+			Anwar
+		</lastname>
+		<phone>
+			(333)333-3333
+		</phone>
+		<email>
+			wajihanwar1@gmail.com
+		</email>
+		<gender>
+			male
+		</gender>
+		<comment>
+			Hi this is a big test
+		</comment>
+	</contact>
+	<contact>
+		<contact-id>
+			675262411ce49
+		</contact-id>
+		<firstname>
+			Wajih
+		</firstname>
+		<lastname>
+			Anwar
+		</lastname>
+		<phone>
+			(333)333-3333
+		</phone>
+		<email>
+			wajih@gmaill.com
+		</email>
+		<gender>
+			male
+		</gender>
+		<comment>
+			This is a test for test sake
+		</comment>
+	</contact>
+</contacts>
