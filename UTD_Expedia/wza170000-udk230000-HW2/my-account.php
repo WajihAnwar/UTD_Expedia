@@ -15,7 +15,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
 
 <head>
     <title>My Account - Assignment #4</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -339,7 +339,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
       
             uploadMessage.textContent = '';
 
-            fetch('uploadFlightsSQL.php', {
+            fetch('api/uploadFlightsSQL.php', {
                     method: 'POST',
                     body: formData
                 })
@@ -366,7 +366,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
             // Clear any previous messages
             hotelUploadMessage.textContent = '';
 
-            fetch('uploadHotelsSQL.php', {
+            fetch('api/uploadHotelsSQL.php', {
                     method: 'POST',
                     body: formData
                 })
@@ -393,7 +393,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
 
             if (ssn) {
                 $.ajax({
-                    url: 'retrieve_flights_by_ssn.php',
+                    url: 'api/retrieve_flights_by_ssn.php',
                     type: 'POST',
                     data: {
                         ssn: ssn
@@ -414,7 +414,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
             const bookingsMessage = $('#bookingsMessage');
 
             $.ajax({
-                url: 'retrieve_booking.php',
+                url: 'api/retrieve_booking.php',
                 type: 'POST',
                 dataType: 'json',
                 success: function(response) {
@@ -472,7 +472,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
 
         if (flight_booking_id) {
             $.ajax({
-                url: 'retrieve_booked_flights.php',
+                url: 'api/retrieve_booked_flights.php',
                 type: 'POST',
                 data: {
                     flight_booking_id: flight_booking_id
@@ -513,7 +513,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
 
         if (hotel_booking_id) {
             $.ajax({
-                url: 'retrieve_booked_hotels.php',
+                url: 'api/retrieve_booked_hotels.php',
                 type: 'POST',
                 data: {
                     hotel_booking_id: hotel_booking_id
@@ -548,7 +548,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
         const septemberInfoMessage = $('#septemberInfoMessage');
         if (septemberInfoMessage.is(':hidden')) {
             $.ajax({
-                url: 'retrieve_september.php',
+                url: 'api/retrieve_september.php',
                 type: 'POST',
                 success: function(response) {
                     $('#septemberInfoMessage').html(response);
@@ -576,7 +576,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
 
             if (flight_booking_id) {
                 $.ajax({
-                    url: 'retrieve_passengers.php', // Backend script to fetch passengers
+                    url: 'api/retrieve_passengers.php', // Backend script to fetch passengers
                     type: 'POST',
                     data: {
                         flight_booking_id: flight_booking_id
@@ -621,7 +621,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
 
             if (flight_booking_id) {
                 $.ajax({
-                    url: 'retrieve_booked_flights.php',
+                    url: 'api/retrieve_booked_flights.php',
                     type: 'POST',
                     data: {
                         flight_booking_id: flight_booking_id
@@ -662,7 +662,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
 
             if (hotel_booking_id) {
                 $.ajax({
-                    url: 'retrieve_booked_hotels.php',
+                    url: 'api/retrieve_booked_hotels.php',
                     type: 'POST',
                     data: {
                         hotel_booking_id: hotel_booking_id
@@ -696,7 +696,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
         const texasBookingsMessage = $('#texasBookingsMessage');
 
         $.ajax({
-            url: 'adminTexas.php',
+            url: 'api/adminTexas.php',
             type: 'POST',
             success: function(response) {
                 texasBookingsMessage.html(response);
@@ -714,7 +714,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
         const expensiveHotelMessage = $('#expensiveHotelMessage');
         if (expensiveHotelMessage.is(':hidden')) {
             $.ajax({
-                url: 'retrieve_ExpensiveHotel.php', // Backend script to fetch expensive hotel data
+                url: 'api/retrieve_ExpensiveHotel.php', // Backend script to fetch expensive hotel data
                 type: 'POST',
                 dataType: 'json',
                 success: function(response) {
@@ -752,7 +752,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
         const expensiveInfoMessage = $('#expensiveInfoMessage');
         if (expensiveInfoMessage.is(':hidden')) {
             $.ajax({
-                url: 'retrieve_expensive.php',
+                url: 'api/retrieve_expensive.php',
                 type: 'POST',
                 dataType: 'json',
                 success: function(response) {
@@ -793,7 +793,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
         const expensiveInfantMessage = $('#expensiveInfantMessage');
         if (expensiveInfantMessage.is(':hidden')) {
             $.ajax({
-                url: 'retrieve_infant.php', // Ensure this path is correct
+                url: 'api/retrieve_infant.php', // Ensure this path is correct
                 type: 'POST',
                 dataType: 'json',
                 success: function(response) {
@@ -834,7 +834,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
         const infantChildrenMessage = $('#infantChildrenMessage');
         if (infantChildrenMessage.is(':hidden')) {
             $.ajax({
-                url: 'retrieve_2Kids.php', // Backend script to fetch data
+                url: 'api/retrieve_2Kids.php', // Backend script to fetch data
                 type: 'POST',
                 dataType: 'json',
                 success: function(response) {
@@ -880,7 +880,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
         const flightsNoInfantsMessage = $('#flightsNoInfantsMessage');
         if (flightsNoInfantsMessage.is(':hidden')) {
             $.ajax({
-                url: 'retrieve_no_infants.php', // Ensure this file path is correct
+                url: 'api/retrieve_no_infants.php', // Ensure this file path is correct
                 type: 'POST',
                 dataType: 'json',
                 success: function(response) {
@@ -930,7 +930,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
         const californiaFlightsMessage = $('#californiaFlightsMessage');
         if (californiaFlightsMessage.is(':hidden')) {
             $.ajax({
-                url: 'retrieve_california_flights.php', // Ensure the file path is correct
+                url: 'api/retrieve_california_flights.php', // Ensure the file path is correct
                 type: 'POST',
                 dataType: 'json',
                 success: function(response) {
@@ -986,7 +986,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
 
         if (hotelsContainer.is(':hidden')) {
             $.ajax({
-                url: 'showHotelsSQL.php',
+                url: 'api/showHotelsSQL.php',
                 type: 'GET',
                 dataType: 'json',
                 success: function(hotels) {
@@ -1028,7 +1028,7 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'];
 
         if (flightsContainer.is(':hidden')) {
             $.ajax({
-                url: 'showFlightsSQL.php',
+                url: 'api/showFlightsSql.php',
                 type: 'GET',
                 dataType: 'json',
                 success: function(flights) {

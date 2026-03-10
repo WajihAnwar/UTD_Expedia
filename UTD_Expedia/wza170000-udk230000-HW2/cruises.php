@@ -7,7 +7,7 @@ session_start();
 
 <head>
     <title>Assignment 3 - Cruises</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 

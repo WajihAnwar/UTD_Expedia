@@ -5,7 +5,7 @@ session_start();
 <html>
 <head>
     <title>Login - Assignment #4</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- header -->
@@ -63,7 +63,7 @@ session_start();
                 echo "<p style='color:red;'>Invalid phone number or password.</p>";
             }
             ?>
-            <form action="login_process.php" method="post">
+            <form action="api/login_process.php" method="post">
                 <label for="phone">Phone Number:</label><br>
                 <input type="text" id="phone" name="phone" required><br><br>
                 <label for="password">Password:</label><br>

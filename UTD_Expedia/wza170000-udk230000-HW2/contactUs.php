@@ -5,7 +5,7 @@ session_start();
 <html>
     <head>
         <title>Contact Us </title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
@@ -221,7 +221,7 @@ $(document).ready(function () {
 
         // AJAX request
         const xhtpp = new XMLHttpRequest();
-        xhtpp.open('POST', 'contact.php', true);
+        xhtpp.open('POST', 'api/contact.php', true);
         xhtpp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhtpp.onload = function() {
             if (xhtpp.status === 200) {

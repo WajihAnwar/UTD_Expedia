@@ -6,7 +6,7 @@ session_start();
 
 <head>
     <title>Cart - Flight Booking</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -350,7 +350,7 @@ function saveBookingToServer(bookingInfo) {
     console.log("Booking Info Sent to Server:", JSON.stringify(bookingInfo, null, 2));
 
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'bookFlight.php', true);
+    xhr.open('POST', 'api/bookFlight.php', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onload = function () {
         console.log("Server Response:", xhr.responseText);
@@ -502,7 +502,7 @@ function sendBookingToServer(bookingDetails, guestDetails, cart) {
     const payload = { bookingDetails, guestDetails };
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "bookHotel.php", true);
+    xhr.open("POST", "api/bookHotel.php", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = function () {
         if (xhr.status === 200) {

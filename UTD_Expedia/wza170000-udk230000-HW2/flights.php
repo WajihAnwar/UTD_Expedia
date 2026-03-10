@@ -6,7 +6,7 @@ session_start();
 
 <head>
     <title>Assignment-2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Font Awesome CDN for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -248,7 +248,7 @@ $(document).ready(function () {
 
         // Function to search flights through looking through flight.xml
         function searchFlights(departureDate, returnDate, origin, destination, passengers, tripType) {
-            fetch('retrieveFlightsSQL.php')
+            fetch('api/retrieveFlightsSQL.php')
                 .then(response => response.text())
                 .then(data => {
                     let parser = new DOMParser();
@@ -393,7 +393,7 @@ $(document).ready(function () {
 
 
             //USE SQL TABLE
-            fetch('retrieveFlightsSQL.php')
+            fetch('api/retrieveFlightsSQL.php')
                 .then(response => response.text())
                 .then(data => {
                     let parser = new DOMParser();
@@ -509,7 +509,7 @@ $(document).ready(function () {
 
 
         function saveCartToPHP(cart) {
-            fetch('saveCart.php', {
+            fetch('api/saveCart.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(cart)

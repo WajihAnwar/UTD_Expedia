@@ -6,7 +6,7 @@ session_start();
 
 <head>
     <title>Assignment #4</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -211,7 +211,7 @@ session_start();
 
         // Send data via AJAX
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'registerUser.php', true);
+        xhr.open('POST', 'api/registerUser.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.onload = function() {
             if (xhr.status === 200) {

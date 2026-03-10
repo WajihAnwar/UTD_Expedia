@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -233,7 +233,7 @@ session_start();
     }
 
     function fetchHotels(city, checkinDay, checkoutDay, adults, children, infants) {
-        const url = `getHotels.php?city=${encodeURIComponent(city)}`;
+        const url = `api/getHotels.php?city=${encodeURIComponent(city)}`;
 
         fetch(url)
             .then(response => {

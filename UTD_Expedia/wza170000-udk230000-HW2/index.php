@@ -5,7 +5,7 @@ session_start();
 <html>
 <head>
     <title>Assignment 2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
